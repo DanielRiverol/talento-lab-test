@@ -463,7 +463,10 @@ ul.reset {
   margin: 0;
   width: 100%;
   height: calc(100vh - 200px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(101, 67, 163, 0.35)),
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(101, 67, 163, 0.35)
+    ),
     url(../assets/hero1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -475,7 +478,6 @@ ul.reset {
 .hero h1 {
   font-size: 4rem;
   text-shadow: #333333 2px 0 7px;
-  
 }
 .hero p {
   padding: 10px;
@@ -510,172 +512,231 @@ ul.reset {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-   
-    line-height: 1.6;
-    color: #333; /* Color de texto general */
+  font-family: "Open Sans", sans-serif;
+
+  line-height: 1.6;
+  color: #333; /* Color de texto general */
 }
 
 .container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .navbar {
-    background-color: #f0f0f0; /* Color de fondo de la barra de navegación */
-    padding: 10px 0;
+  background-color: #f0f0f0; /* Color de fondo de la barra de navegación */
+  padding: 10px 0;
 }
 
 .navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-brand {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .brand-logo {
-    width: 50px; /* Ajusta el tamaño del logo */
-    margin-right: 10px;
+  width: 50px; /* Ajusta el tamaño del logo */
+  margin-right: 10px;
 }
 
 .navbar-nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .nav-item {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: #333; /* Color de enlace de navegación */
-    font-weight: 500;
+  text-decoration: none;
+  color: #333; /* Color de enlace de navegación */
+  font-weight: 500;
 }
 
 .hero {
-    background-image: url('../assets/hero1.jpg'); /* Imagen de fondo del hero */
-    background-size: cover;
-    background-position: center;
-    color: #fff; /* Color de texto del hero */
-    padding: 100px 0;
-    text-align: center;
+  background-image: url("../assets/hero1.jpg"); /* Imagen de fondo del hero */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Color de texto del hero */
+  padding: 100px 0;
+  text-align: center;
 }
 
 .hero-content {
-    max-width: 600px;
-    margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .hero h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
+  font-size: 3em;
+  margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+  font-size: 1.2em;
+  margin-bottom: 30px;
 }
 
 .buttons-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-primary {
-    background-color: #007bff; /* Color de fondo del botón primario */
-    color: #fff;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1em;
-    cursor: pointer;
+  background-color: #007bff; /* Color de fondo del botón primario */
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 .btn-secondary {
-    background-color: #6c757d; /* Color de fondo del botón secundario */
-    color: #fff;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1em;
-    cursor: pointer;
+  background-color: #6c757d; /* Color de fondo del botón secundario */
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 .section {
-    padding: 60px 0;
+  padding: 60px 0;
 }
 
 .section h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta el ancho mínimo según tus necesidades */
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Ajusta el ancho mínimo según tus necesidades */
+  grid-gap: 20px;
 }
 
 .service {
-    padding: 20px;
-    border: 1px solid #ddd; /* Borde opcional para los servicios */
-    text-align: center; /* Texto centrado en los servicios */
+  padding: 20px;
+  border: 1px solid #ddd; /* Borde opcional para los servicios */
+  text-align: center; /* Texto centrado en los servicios */
 }
 
 .service h3 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .clients-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el ancho mínimo para los logos */
-    grid-gap: 20px;
-    justify-items: center; /* Centrar horizontalmente los logos */
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Ajusta el ancho mínimo para los logos */
+  grid-gap: 20px;
+  justify-items: center; /* Centrar horizontalmente los logos */
 }
 
 .clients-grid img {
-    max-width: 100%; /* Ajustar el tamaño de los logos */
-    height: auto;
+  height: auto;
 }
 
 .footer {
-    background-color: #333; /* Color de fondo del footer */
-    color: #fff; /* Color de texto del footer */
-    padding: 20px 0;
-    text-align: center;
+  background-color: #333; /* Color de fondo del footer */
+  color: #fff; /* Color de texto del footer */
+  padding: 20px 0;
+  text-align: center;
 }
 
 /* Estilos para el formulario de contacto */
 #contacto form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #contacto input,
 #contacto textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 #contacto textarea {
-    height: 120px !important;
+  height: 120px !important;
 }
 
 #contacto button {
-    align-self: center; /* Centrar el botón */
+  align-self: center; /* Centrar el botón */
+}
+/* register */
+
+form input,
+form textarea {
+  width: calc(100% - 22px); /* Ajuste para el padding y el borde */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para mensajes de error */
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.testimonials {
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+}
+.testimonials img {
+  width: 120px;
+  border-radius: 50%;
+}
+.testimonials p {
+  text-align: center;
+  padding: 5px;
+}
+.testimonials small {
+  align-content: left;
+  font-style: italic;
+  color: #919191;
+}
+.not-found{
+  /* margin-top: 40px; */
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+}
+.not-found h1{
+  font-size: 10rem;
 }
